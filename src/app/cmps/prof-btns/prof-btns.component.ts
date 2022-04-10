@@ -1,5 +1,5 @@
 import { copyArrayItem, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'prof-btns',
@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prof-btns.component.scss']
 })
 export class ProfBtnsComponent implements OnInit {
-
   constructor() { }
   profBtns=[
     {
