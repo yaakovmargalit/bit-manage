@@ -1,0 +1,34 @@
+<div class="iphone-x">
+    <i></i>
+    <b></b>
+    <div class="prof-main">
+      <div class="prof-top">
+        <img class="prof-img" src="https://media.istockphoto.com/vectors/default-placeholder-man-vector-id844000458?k=20&m=844000458&s=612x612&w=0&h=6vA5LeyqldiTyXVUbTjR-c148f7x0k-qeisBCbV7ZFc="/>
+        <div class="prof-name">בוקר טוב ישראל ישראל</div>
+      </div>
+      <hr>
+      <div class="pay-data">
+        <div class="bank">
+          <p>חשבון בנק לקבלת הכסף</p>
+          <div class="bank-data">698 ***287</div>
+        </div>
+        <hr>
+        <div class="credit">
+          <div class="data">
+            <p>כרטיס לחיוב</p>
+            <div class="credit-data">**** 8974</div>
+          </div>
+          <div class="tap">חדש! רישום לתשלום ב-tap &#62; </div>
+        </div>
+        <hr>
+      </div>
+      <div  class="main-prof-btns"    >
+        <div class="prof-btn" *ngFor="let btn of profBtns" >
+          <img [src]="btn.src" class="icon" alt="">
+          <p class="btn-text">{{btn.text}}</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+

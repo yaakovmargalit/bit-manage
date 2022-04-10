@@ -1,0 +1,11 @@
+<div class="prof-btns">
+        <div cdkDropListGroup class="btns-list">
+        <div cdkDropList [cdkDropListData]="profBtns" class="btns-prof-list" (cdkDropListDropped)="drop($event)">
+            <div class="btn" *ngFor="let btn of profBtns" cdkDrag>{{btn.text}}</div>
+        </div>
+        <div cdkDropList [cdkDropListData]="btnsForUse" class="btns-for-use-list" (cdkDropListDropped)="drop($event)">
+            <div class="btn" *ngFor="let btn of btnsForUse" cdkDrag>{{btn.text}}</div>
+        </div>
+    </div>
+    <phone-demo-prof [profBtns]="profBtns"></phone-demo-prof>
+</div>
